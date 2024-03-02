@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Upload File</h2>
+<form method="POST" enctype="multipart/form-data">
+  <input type="file" id="file" name="file">
+  <input type="submit" value="Upload">
+</form>
+
+{% if text %}
+<h2>Transcript</h2>
+<p>{{ text }}</p>
+{% endif %}
+
+</body>
+</html>
